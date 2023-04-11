@@ -5,9 +5,10 @@
    
    **ToDo:**
    - Create an S3 bucket in multiple regions ☑️
+   - Configure cross-region replication between the buckets
    - Upload a file to the original bucket
    - Verify that the file is automatically replicated to the other buckets.
-   - Configure cross-region replication between the buckets
+  
    
    ## When to use S3 Replication 💡
      > **Data redundancy** – If you need to maintain multiple copies of your data in the same, or different AWS Regions, with different encryption types, or across different accounts. S3 Replication powers your global content distribution needs, compliant storage needs, and data sharing across accounts.<br/><br/>
