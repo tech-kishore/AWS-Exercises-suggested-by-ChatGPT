@@ -21,4 +21,4 @@
      > **Minimize latency** – If your customers are in two geographic locations, you can minimize latency in accessing objects by maintaining object copies in AWS Regions that are geographically closer to your users.<br/><br/>
      > **Increase operational efficiency** – If you have compute clusters in two different AWS Regions that analyze the same set of objects, you might choose to maintain object copies in those Regions.
 
-  ### Resource: https://www.youtube.com/watch?v=trmicgGpmd4
+   ### Resource: https://www.youtube.com/watch?v=trmicgGpmd4
