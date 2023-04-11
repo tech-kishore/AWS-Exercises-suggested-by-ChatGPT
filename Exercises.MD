@@ -22,3 +22,41 @@
      > **Increase operational efficiency** – If you have compute clusters in two different AWS Regions that analyze the same set of objects, you might choose to maintain object copies in those Regions.
 
    ### Resource: https://www.youtube.com/watch?v=trmicgGpmd4
+   
+   ### Role-Policy
+   ```
+   {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetReplicationConfiguration"
+            ],
+            "Resource": "arn:aws:s3:::cgpt-1-s3-replication-n.virginia"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObjectVersionTagging",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": "arn:aws:s3:::cgpt-1-s3-replication-n.virginia/*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ReplicateObject",
+                "s3:ReplicateTags",
+                "s3:ReplicateDelete"
+            ],
+            "Resource": "arn:aws:s3:::cgpt-1-s3-replication-mumbai/*"
+        }
+      ]
+   }
+   ```
