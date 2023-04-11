@@ -1,0 +1,1 @@
+# AWS-Exercises-suggested-by-ChatGPT
