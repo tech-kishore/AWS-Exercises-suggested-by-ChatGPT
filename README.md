@@ -1,1 +1,1 @@
-# AWS-Exercises-suggested-by-ChatGPT
+# Regions & Availability Zones
