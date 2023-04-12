@@ -65,8 +65,13 @@
 **Exercise 2.** Deploy an application across multiple availability zones in a specific region. Use Amazon Route 53 to create a failover routing policy that redirects traffic to a healthy availability zone in the event of an outage in one of the zones.
 
    **ToDo:**
-   - Deploy an application across multiple availability zones in a specific region.
-   - Create a failover routing policy that redirects traffic from unhealthy AZ to healthy AZ
+   - Launch EC2 instances in multiple availability zones in the region.
+   - Configure a load balancer to distribute traffic across the instances.
+   - Create an Amazon Route 53 record set that points to the load balancer's DNS name.
+   - Configure a failover routing policy by creating a second record set that points to a secondary load balancer in another region or availability zone.
+   - Configure health checks for the primary and secondary load balancers so that Route 53 can detect when an availability zone or region becomes unavailable.
+   - Set the failover routing policy to fail over to the secondary load balancer in the event of an outage in the primary region or availability zone.
+   - Once you have set up this configuration, traffic will automatically be redirected to the secondary load balancer if the primary load balancer becomes unavailable due to an outage in one of the availability zones.
   
    
     
