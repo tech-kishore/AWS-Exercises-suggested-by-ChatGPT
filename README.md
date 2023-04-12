@@ -1,7 +1,7 @@
 # Regions & Availability Zones
 
 # Exercises:
-☑️ **1.** Create an S3 bucket in multiple regions and configure cross-region **replication** between the buckets. Upload a file to the original bucket and verify that the file is automatically replicated to the other buckets.
+☑️ **Exercise 1.** Create an S3 bucket in multiple regions and configure cross-region **replication** between the buckets. Upload a file to the original bucket and verify that the file is automatically replicated to the other buckets.
    
    **ToDo:**
    - Create an S3 bucket in multiple regions ☑️
@@ -60,4 +60,15 @@
       ]
    }
    ```
+   --------------------------------------------
+   
+**Exercise 2.** Deploy an application across multiple availability zones in a specific region. Use Amazon Route 53 to create a failover routing policy that redirects traffic to a healthy availability zone in the event of an outage in one of the zones.
+
+   **ToDo:**
+   - Deploy an application across multiple availability zones in a specific region.
+   - Create a failover routing policy that redirects traffic from unhealthy AZ to healthy AZ
+  
+   
+    
+    
 
