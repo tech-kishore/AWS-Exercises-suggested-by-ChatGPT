@@ -67,7 +67,7 @@
    **ToDo:**
    - Launch EC2 instances in multiple availability zones in the region. ☑️
    - Configure a load balancer to distribute traffic across the instances. ☑️
-   - Create an Amazon Route 53 record set that points to the load balancer's DNS name.
+   - Create an Amazon Route 53 record set that points to the load balancer's DNS name. ☑️
    - Configure a failover routing policy by creating a second record set that points to a secondary load balancer in another region or availability zone.
    - Configure health checks for the primary and secondary load balancers so that Route 53 can detect when an availability zone or region becomes unavailable.
    - Set the failover routing policy to fail over to the secondary load balancer in the event of an outage in the primary region or availability zone.
