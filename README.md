@@ -72,6 +72,9 @@
    - Configure health checks for the primary and secondary load balancers so that Route 53 can detect when an availability zone or region becomes unavailable. **_This step is chargeable._ <a href="https://www.youtube.com/watch?v=cTrVCykJ-aU"> Check this for testing</a>** ☑️
    - Set the failover routing policy to fail over to the secondary load balancer in the event of an outage in the primary region or availability zone. ☑️
    - Once you have set up this configuration, traffic will automatically be redirected to the secondary load balancer if the primary load balancer becomes unavailable due to an outage in one of the availability zones. ☑️
+
+ --------------------------------------------
+ **Exercise 3.** Create an AWS CloudFront distribution that uses multiple edge locations in different regions to deliver content to end-users. Configure the distribution to automatically route traffic to the nearest edge location, reducing latency and improving performance for end-users.
    
    
   
