@@ -76,6 +76,11 @@
  --------------------------------------------
  **Exercise 3.** Create an AWS CloudFront distribution that uses multiple edge locations in different regions to deliver content to end-users. Configure the distribution to automatically route traffic to the nearest edge location, reducing latency and improving performance for end-users.
    
+   **ToDo:**
+   - Create Distribution of type "Web"
+   
+   
+   
    
   
    
