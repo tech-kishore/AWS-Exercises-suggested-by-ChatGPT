@@ -77,7 +77,20 @@
  **Exercise 3.** Create an AWS CloudFront distribution that uses multiple edge locations in different regions to deliver content to end-users. Configure the distribution to automatically route traffic to the nearest edge location, reducing latency and improving performance for end-users.
    
    **ToDo:**
-   - Create Distribution of type "Web"
+   - Click the "Create Distribution" button and choose the type of distribution you want to create. For this exercise, choose the "Web" distribution type.
+   - In the "Origin Settings" section, specify the origin where CloudFront should fetch content from. You can specify an S3 bucket or a custom origin, such as an EC2 instance or an Elastic Load Balancer. For example, you can specify an S3 bucket that contains your static website files as the origin.
+   - In the "Default Cache Behavior Settings" section, specify how CloudFront should handle requests for content. You can configure caching behavior, specify which HTTP methods to forward to your origin, and set up security and origin access identity settings. For example, you can set the "Minimum TTL" to 0 to disable caching, and choose "HTTP and HTTPS" for the "Allowed HTTP Methods".
+   - In the "Distribution Settings" section, specify the following:
+      - Alternate Domain Names (CNAMEs): Optionally, specify custom domain names that you want to associate with your CloudFront distribution.
+      - Price Class: Choose the price class that best suits your needs. A higher price class will give you access to more edge locations, but will be more expensive. For this exercise, choose the "Price Class 100" to have access to all edge locations.
+      - SSL Certificate: Choose the SSL certificate that you want to use to secure connections to your distribution. You can either use the default CloudFront certificate or specify your own certificate.
+      - Supported HTTP Versions: Choose the supported HTTP versions for your distribution. For example, you can choose "HTTP/2, HTTP/1.1, HTTP/1.0".
+   - In the "Enabled Protocols and Cipher Suites" section, specify the protocols and cipher suites that you want to use for your distribution. For example, you can choose "TLSv1.2" for the protocols and "AES128-SHA256" for the cipher suites.
+   - In the "Distribution State" section, choose "Enabled" to enable your distribution.
+   - In the "Distribution Settings" section, under "Geolocation", select "Yes" for "Enable geolocation" and leave the default settings.
+   - Under "Origins and Origin Groups", add additional origins if needed, specifying a different region for each origin. For example, you can add an S3 bucket in a different region as an additional origin.
+   - Under "Behaviors", create a new behavior and specify a path pattern that should use this behavior, then choose the origin or origin group to associate with this behavior. Repeat this step for each additional behavior you need. For example, you can create a behavior for your S3 bucket origin, and another behavior for your additional S3 bucket origin in a different region.
+   - Save and deploy your distribution changes.
    
    
    
